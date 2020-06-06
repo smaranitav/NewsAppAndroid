@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherLayout">
+
+        <TextView
+            android:id="@+id/cityText"
+            android:textColor="@color/design_default_color_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/stateText"
+            android:textColor="@color/design_default_color_background"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cityText"/>
+        <TextView
+            android:id="@+id/temp"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/cityText"/>
+
+        <TextView
+            android:id="@+id/condDescr"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="148dp"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@+id/temp"
+            android:layout_toRightOf="@+id/stateText"
+             />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

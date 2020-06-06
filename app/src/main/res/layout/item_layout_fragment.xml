@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/cardFragment">
+
+        <RelativeLayout
+            android:id="@+id/newsLayout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/articleImg_fragment"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+               />
+
+            <TextView
+                android:id="@+id/title_fragment"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/articleImg_fragment"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+
+            <ImageView
+                android:id="@+id/unclickedBookmark_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title_fragment"
+                android:src="@drawable/unclicked_bookmark"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/clickedBookmark_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title_fragment"
+                android:src="@drawable/clicked_bookmark"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/time_fragment"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_fragment"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/articleImg_fragment"
+                />
+
+            <TextView
+                android:id="@+id/slash_fragment"
+                android:text="|"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_fragment"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/time_fragment"
+                />
+            <TextView
+                android:id="@+id/section_fragment"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_fragment"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/slash_fragment"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/cardFragment"
+        />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/imageDialog"
+        android:textStyle="bold"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"/>
+
+    <ImageButton
+        android:id="@+id/twitter_share"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textDialog"
+        android:adjustViewBounds="true"
+        android:background="@drawable/customborder"
+        android:scaleType="fitCenter"
+        android:src="@drawable/twitter"/>
+    <ImageButton
+        android:id="@+id/bookmark_unsave"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textDialog"
+        android:layout_toRightOf="@+id/twitter_share"
+        android:adjustViewBounds="true"
+        android:background="@drawable/customborder"
+        android:scaleType="fitCenter"
+        android:src="@drawable/unclicked_bookmark"
+        android:visibility="gone"/>
+    <ImageButton
+        android:id="@+id/bookmark_save"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textDialog"
+        android:layout_toRightOf="@+id/twitter_share"
+        android:adjustViewBounds="true"
+        android:background="@drawable/customborder"
+        android:scaleType="fitCenter"
+        android:src="@drawable/clicked_bookmark"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

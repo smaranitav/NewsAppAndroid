@@ -1,5 +1,5 @@
 # NewsAppAndroid
-Worked on developing an Android application for displaying and sharing Guardian news on social media, accessing trending news using Google Trends and using search functionality for accessing news.   
+Worked on developing an Android application for displaying and sharing Guardian news on social media, displaying trending news and search functionality to look up for keywords in the news.
 
 # Features
 1. Displays the latest news from Guardian News API and also displays the top headlines according to categories such as :
